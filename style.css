@@ -148,6 +148,7 @@ h2 {
         width: calc(100vw-80px);
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
 
