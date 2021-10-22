@@ -84,7 +84,12 @@ h2 {
 
 /* TABLET - min-width: 640px */
 
-/* @media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     header {
         display: flex;
@@ -100,12 +105,41 @@ h2 {
         margin: 30px;
     }
 
-    .description {
-        margin: 15px 110px 30px 110px;
+    .description, 
+    .buttons {
+        margin-left:110px; 
+        margin-right: 110px;
     }
 
     .buttons {
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
     }
-} */
+
+    .primary,
+    .secondary {
+        margin: 10px;
+    }
+
+    .office-service,
+    .courier-service {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .courier-service h2,
+    .description {
+        flex: 1 1 100%;
+    }
+
+    .service-card {
+        flex: 0 1 30%;
+        width: calc(100vw-80px);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
