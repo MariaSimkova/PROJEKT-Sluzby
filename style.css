@@ -3,4 +3,109 @@ html { box-sizing: border-box; }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
 }
+
+.hero-banner {
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+} 
+
+.description {
+    font-size: 16px;
+    color: #8B8B8B;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 60px; */
+}
+
+.primary {
+    background-color: #407BFF;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.secondary {
+    background-color: #8B8B8B;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+}
+
+.office-service,
+.courier-service {
+    margin: 60px 0 0 0;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px #407BFF1F;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #8B8B8B;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.service-card img {
+    flex: 1 1;
+    margin: 20px;
+}
+
+.service {
+    padding-left: 10px;
+}
+
+
+
+/* TABLET - min-width: 640px */
+
+/* @media screen and (min-width: 640px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-banner {
+        width: 400px;
+    }
+    
+    h1 {
+        margin: 30px;
+    }
+
+    .description {
+        margin: 15px 110px 30px 110px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+} */
