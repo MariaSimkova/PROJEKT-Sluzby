@@ -6,8 +6,14 @@ body {
     padding: 60px 20px;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-banner {
-    width: 100%;
+    width: calc(100% - 75px);
 }
 
 h1 {
@@ -29,6 +35,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     /* margin-bottom: 60px; */
+}
+
+button {
+    font-family: inherit;
 }
 
 .primary {
