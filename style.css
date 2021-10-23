@@ -4,7 +4,10 @@ html { box-sizing: border-box; }
 body {
     font-family: 'Montserrat', sans-serif;
     padding: 60px 20px;
+    background-color: #FAFAFA;
 }
+
+/* Header */
 
 header {
     display: flex;
@@ -58,6 +61,19 @@ button {
     padding: 10px 30px;
 }
 
+.primary:hover {
+    background-color: #396bd6;
+}
+
+.secondary:hover {
+    background-color: #6e6e6e;
+
+}
+
+
+
+/* Office-service and Courier-service*/
+
 .office-service,
 .courier-service {
     margin: 60px 0 0 0;
@@ -84,6 +100,7 @@ h2 {
 .service-card img {
     flex: 1 1;
     margin: 20px;
+    max-width: 50px;
 }
 
 .service {
@@ -115,6 +132,10 @@ h2 {
         margin: 30px;
     }
 
+    .description {
+        padding-bottom: 40px;
+    }
+
     .description, 
     .buttons {
         margin-left:110px; 
@@ -134,13 +155,18 @@ h2 {
     .office-service,
     .courier-service {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 
     .courier-service h2,
     .description {
         flex: 1 1 100%;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .service-card {
@@ -151,6 +177,89 @@ h2 {
         text-align: center;
     }
 
+}
 
+/* PC - min-width: 1100px */
+
+@media screen and (min-width: 1100px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header,
+    .office-service,
+    .courier-service {
+        max-width: 1040px;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-pic {
+        order: 1;
+        flex: 1 1 490px;
+        margin-left: 60px
+    }
+
+    .hero-banner {
+        max-width: 425px;
+    }
+
+    .cta {
+        order: 0;
+        flex: 1 1 490px;
+    }
+
+    h1,
+    p,
+    .service-text h2,
+    .service-text p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .cta p {
+        text-align: left;
+        margin: 0;
+    }
+
+    .buttons {
+        justify-content: start;
+        margin: 0;
+    }
+
+    .office-service,
+    .courier-service {
+        margin-top: 80px;
+        margin-bottom: 0;
+        flex-direction: row;
+        flex: 1 1 100%;
+    }
+
+    .left {
+        order: 0;
+    }
+
+    .right {
+        order: 1;
+        margin-left: 60px;
+        align-items: start;
+    }
+
+    .service-text {
+        flex-basis: 430px;
+    }
+
+    .cards {
+        flex-basis: 550px;
+        justify-content: space-between;
+    }
 
 }
